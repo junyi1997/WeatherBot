@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>Chatbot Development - Using DialogFlow - Speaker Deck</title>
+    <link rel="stylesheet" media="screen" href="Chatbot%20Development%20-%20Using%20DialogFlow%20-%20Speaker%20Deck_files/application-6779f35accf6775feb80206410e06d442e089d71d91596e4.css">
+<script src="Chatbot%20Development%20-%20Using%20DialogFlow%20-%20Speaker%20Deck_files/sdk_002.js" async="" crossorigin="anonymous"></script><script id="facebook-jssdk" src="Chatbot%20Development%20-%20Using%20DialogFlow%20-%20Speaker%20Deck_files/sdk.js"></script><script type="text/javascript" async="" src="Chatbot%20Development%20-%20Using%20DialogFlow%20-%20Speaker%20Deck_files/ga.js"></script><script src="Chatbot%20Development%20-%20Using%20DialogFlow%20-%20Speaker%20Deck_files/application-7f1c5632dffea96fdf37.js"></script><style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style>
+<link rel="icon" type="image/png" href="https://d2dfho4r6t7asi.cloudfront.net/assets/favicon-c0fe5475f88a65b817c8cc7c0fedc01b7acc17fe27628fa13ca3f96e56e16977.png">
+<link rel="apple-touch-icon" type="image/png" href="https://d2dfho4r6t7asi.cloudfront.net/assets/favicon-c0fe5475f88a65b817c8cc7c0fedc01b7acc17fe27628fa13ca3f96e56e16977.png">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="WEW76UROUNWzVZTI8PYt0ivHLxWpC92Q22uoklGmwktBG9Bydl00s/txM7IQ7b/05eAdxzgBR2MIaIpf8o4H9w==">
+
+
+      <link rel="alternate" type="application/json+oembed" href="https://speakerdeck.com/oembed.json?url=https%3A%2F%2Fspeakerdeck.com%2Fryan403%2Fchatbot-development-using-dialogflow" title="Chatbot Development - Using DialogFlow">
+
+  <meta property="og:url" content="https://speakerdeck.com/ryan403/chatbot-development-using-dialogflow?slide=35">
+  <meta property="og:site_name" content="Speaker Deck">
+  <meta property="og:title" content="Chatbot Development - Using DialogFlow">
+  <meta property="og:description" content="http://MobileDev.TW">
+  <meta property="og:type" content="website">
+  <meta property="og:author" content="https://www.facebook.com/SpeakerDeck">
+  <meta property="og:image" content="https://speakerd.s3.amazonaws.com/presentations/235670e0928f4df78a811bb74fa7d6a2/slide_0.jpg?415074">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@speakerdeck">
+  <meta name="twitter:creator" content="@speakerdeck">
+  <meta name="twitter:title" content="Chatbot Development - Using DialogFlow">
+  <meta name="twitter:description" content="http://MobileDev.TW">
+  <meta name="twitter:image:src" content="https://speakerd.s3.amazonaws.com/presentations/235670e0928f4df78a811bb74fa7d6a2/slide_0.jpg?415074">
+  <link rel="canonical" href="https://speakerdeck.com/ryan403/chatbot-development-using-dialogflow">
+
+  <meta name="stats-owner_id" content="27997">
+  <meta name="stats-talk_id" content="415299">
+  <meta name="stats-view_type" content="talk">
+
+    
+  <script id="_bsa_srv-CK7I4K3Y_0" type="text/javascript" src="Chatbot%20Development%20-%20Using%20DialogFlow%20-%20Speaker%20Deck_files/CK7I4K3Y.json"></script><script id="_carbonads_projs" type="text/javascript" src="Chatbot%20Development%20-%20Using%20DialogFlow%20-%20Speaker%20Deck_files/CK7D553I.json"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#1d3c78;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}</style></head>
+  <body class="sd-app">
+    
+    <div class="sd-menu d-md-none">
+  <div class="container sd-menu-fixed-container">
+    <div class="sd-brand">
+      <a class="sd-brand-logo" href="https://speakerdeck.com/">
+        <img alt="Speaker Deck" src="Chatbot%20Development%20-%20Using%20DialogFlow%20-%20Speaker%20Deck_files/mark-f4be6df1e05965cac9f98e664a6c35f5ffdd0207385d07464a9214d.svg"> <span class="d-none d-md-inline">Speaker Deck</span>
+</a>    </div>
+
+      <nav class="sd-fixed-nav">
+        <div class="sd-nav-main js-toggle-container">
+          <ul class="sd-nav-fixed-group nav toggle-flex-when-off">
+            <li class="sd-nav-item d-md-block d-none">
+              <form action="https://www.google.com/cse" id="cse-search-box" class="form-inline ml-5 ml-md-3">
+                <input name="cx" value="010150859881542981030:hqhxyxpwtc4" type="hidden">
+                <input name="ie" value="UTF-8" type="hidden">
+                <input name="q" id="q" placeholder="Search..." class="form-control search-input mr-2" type="text">
+                <input name="sa" value="Search" class="btn btn-outline-primary d-inline-block d-md-none d-lg-inline-block" type="submit">
+              </form>
+            </li>
+            <li class="sd-nav-item nav-item">
+            </li>
+            <li class="sd-nav-item nav-item">
+              <a class="sd-nav-link nav-link" href="https://speakerdeck.com/signin">
+                Sign in
+</a>            </li>
+            <li class="sd-nav-item nav-item">
+              <a class="btn btn-primary" href="https://speakerdeck.com/signup">
+                Sign up <span class="d-none d-md-inline">for free</span>
+</a>            </li>
+            <li class="sd-nav-item d-block d-md-none">
+              <button class="btn btn-link mr-2 js-toggle-trigger">
+                <svg class="icon icon-search "><use xlink:href="/icons/icons.svg#icon-search"></use></svg>
+              </button>
+            </li>
+          </ul>
+          <ul class="sd-nav-fixed-group nav toggle-flex-when-on">
+            <li class="sd-nav-item">
+              <form action="https://www.google.com/cse" id="cse-search-box" class="form-inline ml-5 ml-md-3">
+                <input name="cx" value="010150859881542981030:hqhxyxpwtc4" type="hidden">
+                <input name="ie" value="UTF-8" type="hidden">
+                <div class="row">
+                  <div class="col col-auto pr-0">
+                    <input name="q" id="q" placeholder="Search..." class="form-control search-input mr-2" type="text">
+                  </div>
+                  <div class="col col-auto">
+                    <input name="sa" value="Search" class="btn btn-outline-primary d-inline-block d-md-none d-lg-inline-block" type="submit">
+                  </div>
+                </div>
+              </form>
+            </li>
+            <li class="sd-nav-item pr-2">
+              <button class="btn btn-link js-toggle-trigger">
+                <svg class="icon icon-x "><use xlink:href="/icons/icons.svg#icon-x"></use></svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  </div>
+</div>
+
+    
+    
+    <div class="sd-main">
+      
+
+
+<div class="deck">
+  <div class="deck-background" style="background-image: url(&quot;https://speakerd.s3.amazonaws.com/presentations/235670e0928f4df78a811bb74fa7d6a2/slide_43.jpg?11778237&quot;);"></div>
+  
+  <div class="deck-header d-none d-md-block js-toggle-container">
+    <div class="container d-flex align-items-center w-100">
+      <div class="deck-header-logo py-3 flex-grow-0">
+        <a class="sd-brand-logo" href="https://speakerdeck.com/">
+          <img alt="Speaker Deck" src="Chatbot%20Development%20-%20Using%20DialogFlow%20-%20Speaker%20Deck_files/mark-white-8d908558fe78e8efc8118c6fe9b9b1a9846b182c503bdc690.svg">
+</a>      </div>
+      <h4 class="deck-header-title flex-grow-1 flex-shrink-0 w-100 d-none mx-3 d-md-block p-3 text-center m-0 text-white text-truncate toggle-block-when-off">
+        Chatbot Development - Using DialogFlow
+      </h4>
+      <div class="deck-header-user-nav toggle-block-when-on ml-auto">
+        <form action="https://www.google.com/cse" id="cse-search-box" class="form-inline ml-5 ml-md-3">
+          <input name="cx" value="010150859881542981030:hqhxyxpwtc4" type="hidden">
+          <input name="ie" value="UTF-8" type="hidden">
+          <input name="q" id="q" placeholder="Search..." class="form-control form-control-inverse search-input mr-2" type="text">
+          <input name="sa" value="Search" class="btn btn-success d-inline-block d-md-none d-lg-inline-block" type="submit">
+        </form>
+      </div>
+      <div class="deck-header-user-nav toggle-block-when-on">
+        <button class="btn btn-link mr-2 js-toggle-trigger">
+          <svg class="icon icon-x "><use xlink:href="/icons/icons.svg#icon-x"></use></svg>
+        </button>
+      </div>
+      <div class="deck-header-user-nav toggle-block-when-off">
+        <button class="btn btn-link mr-2 js-toggle-trigger">
+          <svg class="icon icon-search "><use xlink:href="/icons/icons.svg#icon-search"></use></svg>
+        </button>
+      </div>
+      <div class="deck-header-user-nav flex-grow-0 dropdown py-3">
+        
+      </div>
+    </div>
+  </div>
+
+  
+<div class="deck-embed js-deck-embed" data-ratio="1.41436464088398" data-state="processed" style="width: 901px;">
+    <div class="speakerdeck-embed-wrapper"><iframe class="speakerdeck-iframe" style="border: 0px none; background: rgba(0, 0, 0, 0.1) none repeat scroll 0% 0% padding-box; margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 841px; height: 595px;" src="Chatbot%20Development%20-%20Using%20DialogFlow%20-%20Speaker%20Deck_files/235670e0928f4df78a811bb74fa7d6a2.htm" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" frameborder="0"></iframe></div>
+</div>
+
+
+  <div class="deck-meta">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md-auto col-12 py-3">
+          <div class="row align-items-center justify-content-between justify-content-md-start">
+            <a class="d-flex align-items-center font-weight-bold text-white col-auto" href="https://speakerdeck.com/ryan403">
+              <span class="mr-2">
+                <img class="avatar" src="Chatbot%20Development%20-%20Using%20DialogFlow%20-%20Speaker%20Deck_files/1741a7877b6ff93bf29af4d11c2c895e.jpg" alt="1741a7877b6ff93bf29af4d11c2c895e?s=47">
+              </span>
+              <span>
+                Ryan Chung
+              </span>
+</a>            <div class="col-auto text-muted">
+              November 08, 2017
+            </div>
+          </div>
+        </div>
+        <div class="col-md-auto col-12 py-md-3 pb-3">
+          <div class="row justify-content-between justify-content-md-start">
+              <div class="col-auto mr-auto mr-md-0">
+                <a class="text-white font-weight-bold" href="https://speakerdeck.com/c/technology">
+                  <svg class="icon icon-folder "><use xlink:href="/icons/icons.svg#icon-folder"></use></svg> Technology
+</a>              </div>
+            <div class="col-auto">
+              <div class="js-stargazer animated">
+      <a class="text-white font-weight-bold" title="Star this deck" href="https://speakerdeck.com/signin?return_to=%2Fryan403%2Fchatbot-development-using-dialogflow">
+        <svg class="icon icon-star "><use xlink:href="/icons/icons.svg#icon-star"></use></svg> 2
+</a></div>
+
+            </div>
+            <div class="col-auto text-white font-weight-bold">
+              <span title="657 views"><svg class="icon icon-eye "><use xlink:href="/icons/icons.svg#icon-eye"></use></svg> 660</span>
+            </div>
+            <div class="col-auto text-white font-weight-bold">
+              <a title="Download PDF" href="https://speakerd.s3.amazonaws.com/presentations/235670e0928f4df78a811bb74fa7d6a2/01.%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E8%AA%9E%E6%84%8F%E5%88%86%E6%9E%90.pdf"><svg class="icon icon-download "><use xlink:href="/icons/icons.svg#icon-download"></use></svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style media="screen">
+.native-js  {
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.native-banner {
+  display: flex;
+  padding: 20px 20px;
+  text-decoration: none;
+
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.native-banner .native-img {
+  margin-right: 20px;
+  max-height: 50px;
+  line-height: 0;
+}
+
+.native-banner .native-main {
+  display: flex;
+  max-width: 1024px;
+  margin: 0 auto;
+
+  flex-grow: 1;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.native-banner .native-details {
+  display: flex;
+  margin-right: 20px;
+
+  flex-flow: column nowrap;
+}
+
+.native-banner .native-company {
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 10px;
+  line-height: 1;
+}
+
+.native-banner .native-desc {
+  letter-spacing: 1px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.native-banner .native-cta {
+  padding: 10px 16px;
+  border-radius: 3px;
+  box-shadow: 0 6px 13px 0 hsla(0, 0%, 0%, .15);
+  text-transform: uppercase;
+  white-space: nowrap;
+  letter-spacing: 1px;
+  line-height: 1;
+  font-weight: 400;
+  font-size: 12px;
+  transition: all .3s ease-in-out;
+  transform: translateY(-1px);
+}
+
+.native-banner .native-cta:hover {
+  box-shadow: none;
+  transform: translateY(1px);
+}
+
+.native-source {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 5px;
+  border-top: 0;
+  border-top-left-radius: 3px;
+  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, hsla(0, 0%, 0%, .025) 5px, hsla(0, 0%, 0%, .025) 10px) hsla(203, 11%, 95%, .4);
+  color: #111;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-weight: 600;
+  font-size: 7px;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 759px) {
+  .native-banner,
+  .native-banner .native-main {
+    flex-flow: column nowrap;
+  }
+
+  .native-banner .native-img,
+  .native-banner .native-details {
+    margin: 0;
+  }
+
+  .native-banner .native-img {
+    display: none;
+  }
+
+  .native-banner .native-company {
+    letter-spacing: 1px;
+  }
+
+  .native-banner .native-details {
+    text-align:  left;
+    font-size: 14px;
+  }
+
+  .native-banner .native-cta {
+    display: none;
+  }
+}
+</style>
+<script src="Chatbot%20Development%20-%20Using%20DialogFlow%20-%20Speaker%20Deck_files/monetization.js" type="text/javascript"></script>
+<div class="native-js"></div>
+<script>
+(function(){
+  if(typeof _bsa !== 'undefined' && _bsa) {
+      _bsa.init('custom', 'CK7I4K3Y', 'placement:speakerdeckcom',
+        {
+          target: '.native-js',
+          template: `
+<a href="##link##" class="native-banner" style="background: linear-gradient(-30deg, ##backgroundColor##E5, ##backgroundColor##E5 45%, ##backgroundColor## 45%) #fff;">
+    <div class="native-main">
+      <img class="native-img" img src="##logo##">
+      <div class="native-details" style="color: ##textColor##">
+        <span class="native-company">Sponsored by ##company##</span>
+        <span class="native-desc">##description##</span>
+      </div>
+      <span class="native-cta" style="color: ##ctaTextColor##; background-color: ##ctaBackgroundColor##;">##callToAction##</span>
+    </div>
+  </a>
+`,
+        }
+      );
+    }
+})();
+</script>
+
+<div class="container container-lg py-md-5 py-3">
+  <h1 class="mb-4">Chatbot Development - Using&nbsp;DialogFlow</h1>
+    <div class="deck-description mb-4">
+      <p><a rel="nofollow" href="http://mobiledev.tw/">http://MobileDev.TW</a></p>
+    </div>
+  <div class="row align-items-center mb-4">
+    <div class="col-md-auto col-12 mr-md-auto mb-4 mb-md-0">
+      <div class="row align-items-center">
+        <div class="col-auto">
+          <a href="https://speakerdeck.com/ryan403"><img class="avatar avatar-large" src="Chatbot%20Development%20-%20Using%20DialogFlow%20-%20Speaker%20Deck_files/1741a7877b6ff93bf29af4d11c2c895e_002.jpg" alt="1741a7877b6ff93bf29af4d11c2c895e?s=128"></a>
+        </div>
+        <div class="col-auto pl-0">
+          <h4 class="m-0"><a class="text-dark" href="https://speakerdeck.com/ryan403">Ryan Chung</a></h4>
+          <div class="text-muted">November 08, 2017</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-auto col-12">
+      <div class="btn-group d-flex" role="group">
+        
+        <a href="https://twitter.com/intent/tweet?url=https://speakerdeck.com/ryan403/chatbot-development-using-dialogflow?slide=35&amp;text=Chatbot+Development+-+Using+DialogFlow" class="btn btn-outline-primary w-100">
+          <svg class="icon icon-twitter "><use xlink:href="/icons/icons.svg#icon-twitter"></use></svg> Tweet
+        </a>
+        <button class="facebook-share btn btn-outline-primary w-100">
+          <svg class="icon icon-facebook "><use xlink:href="/icons/icons.svg#icon-facebook"></use></svg> Share
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="carbon-container">
+        <script async="" type="text/javascript" src="Chatbot%20Development%20-%20Using%20DialogFlow%20-%20Speaker%20Deck_files/carbon.js" id="_carbonads_js"></script><div id="carbonads"><span><span class="carbon-wrap"><a href="https://srv.carbonads.net/ads/click/x/GTND42QMCABI5KJUFT7LYKQMCWSIKKJMCAAICZ3JCWBI523MCTYDTKQKC6BIP27MCEYDTK3EHJNCLSIZ?segment=placement:speakerdeckcom;" class="carbon-img" target="_blank" rel="noopener"><img src="Chatbot%20Development%20-%20Using%20DialogFlow%20-%20Speaker%20Deck_files/1547651442-slack-carbon-white_2x.png" alt="" style="max-width: 130px;" width="130" height="100" border="0"></a><a href="https://srv.carbonads.net/ads/click/x/GTND42QMCABI5KJUFT7LYKQMCWSIKKJMCAAICZ3JCWBI523MCTYDTKQKC6BIP27MCEYDTK3EHJNCLSIZ?segment=placement:speakerdeckcom;" class="carbon-text" target="_blank" rel="noopener">Bring your team together with Slack, the collaboration hub for work.</a></span><a href="http://carbonads.net/?utm_source=speakerdeckcom&amp;utm_medium=ad_via_link&amp;utm_campaign=in_unit&amp;utm_term=carbon" class="carbon-poweredby" target="_blank" rel="noopener">ads via Carbon</a><img src="Chatbot%20Development%20-%20Using%20DialogFlow%20-%20Speaker%20Deck_files/B21259774.gif" style="display: none;" width="1" height="1" border="0"></span></div>
+      </div>
+</div>
+
+<div class="bg-lightest border-top">
+  <div class="container py-md-4 py-3">
+    <h2 class="mb-4">Want more?</h2>
+    <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+    <a href="https://speakerdeck.com/ryan403/conversational-ai-orientation" title="Conversational AI Orientation">
+      <div class="card deck-preview" data-id="ee7416aff2fb43c4ba352adb4c78bd3a" data-slide-count="45" data-cover-image="https://speakerd.s3.amazonaws.com/presentations/ee7416aff2fb43c4ba352adb4c78bd3a/preview_slide_0.jpg?512493">
+        <div class="deck-preview-image">
+          <div class="content"></div>
+          <div class="deck-preview-slide" style="background-image: url('https://speakerd.s3.amazonaws.com/presentations/ee7416aff2fb43c4ba352adb4c78bd3a/preview_slide_0.jpg?512493');"></div>
+          <div class="deck-preview-background" style="background-image: url('https://speakerd.s3.amazonaws.com/presentations/ee7416aff2fb43c4ba352adb4c78bd3a/preview_slide_0.jpg?512493');"></div>
+          <div class="deck-preview-slide deck-preview-scrub-slide"></div>
+          <div class="deck-preview-background deck-preview-scrub-background"></div>
+          <div class="deck-preview-scrubber"></div>
+        </div>
+        <div class="deck-preview-meta d-flex px-3 justify-content-between">
+          <div class="py-3 pr-1">
+            <img class="avatar avatar-sm" src="Chatbot%20Development%20-%20Using%20DialogFlow%20-%20Speaker%20Deck_files/1741a7877b6ff93bf29af4d11c2c895e_003.jpg" alt="1741a7877b6ff93bf29af4d11c2c895e?s=48"> Apr 27, 2019
+          </div>
+            <div class="py-3">
+              <svg class="icon icon-star "><use xlink:href="/icons/icons.svg#icon-star"></use></svg> 0
+            </div>
+            <div class="py-3">
+              <span title="114 views"><svg class="icon icon-eye "><use xlink:href="/icons/icons.svg#icon-eye"></use></svg> 110</span>
+            </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+    <a href="https://speakerdeck.com/ryan403/ai-in-classroom" title="AI in Classroom">
+      <div class="card deck-preview" data-id="63032b9ea13d49129e493ca17aeb915b" data-slide-count="46" data-cover-image="https://speakerd.s3.amazonaws.com/presentations/63032b9ea13d49129e493ca17aeb915b/preview_slide_0.jpg?512258">
+        <div class="deck-preview-image">
+          <div class="content"></div>
+          <div class="deck-preview-slide" style="background-image: url('https://speakerd.s3.amazonaws.com/presentations/63032b9ea13d49129e493ca17aeb915b/preview_slide_0.jpg?512258');"></div>
+          <div class="deck-preview-background" style="background-image: url('https://speakerd.s3.amazonaws.com/presentations/63032b9ea13d49129e493ca17aeb915b/preview_slide_0.jpg?512258');"></div>
+          <div class="deck-preview-slide deck-preview-scrub-slide"></div>
+          <div class="deck-preview-background deck-preview-scrub-background"></div>
+          <div class="deck-preview-scrubber"></div>
+        </div>
+        <div class="deck-preview-meta d-flex px-3 justify-content-between">
+          <div class="py-3 pr-1">
+            <img class="avatar avatar-sm" src="Chatbot%20Development%20-%20Using%20DialogFlow%20-%20Speaker%20Deck_files/1741a7877b6ff93bf29af4d11c2c895e_003.jpg" alt="1741a7877b6ff93bf29af4d11c2c895e?s=48"> Apr 26, 2019
+          </div>
+            <div class="py-3">
+              <svg class="icon icon-star "><use xlink:href="/icons/icons.svg#icon-star"></use></svg> 0
+            </div>
+            <div class="py-3">
+              <span title="138 views"><svg class="icon icon-eye "><use xlink:href="/icons/icons.svg#icon-eye"></use></svg> 140</span>
+            </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+    <a href="https://speakerdeck.com/ryan403/make-your-raspberry-pi-into-alexa-device" title="Make Your Raspberry Pi into Alexa Device">
+      <div class="card deck-preview" data-id="fa25b0b6a06449e5b1be9bf8270cfde3" data-slide-count="29" data-cover-image="https://speakerd.s3.amazonaws.com/presentations/fa25b0b6a06449e5b1be9bf8270cfde3/preview_slide_0.jpg?500686">
+        <div class="deck-preview-image">
+          <div class="content"></div>
+          <div class="deck-preview-slide" style="background-image: url('https://speakerd.s3.amazonaws.com/presentations/fa25b0b6a06449e5b1be9bf8270cfde3/preview_slide_0.jpg?500686');"></div>
+          <div class="deck-preview-background" style="background-image: url('https://speakerd.s3.amazonaws.com/presentations/fa25b0b6a06449e5b1be9bf8270cfde3/preview_slide_0.jpg?500686');"></div>
+          <div class="deck-preview-slide deck-preview-scrub-slide"></div>
+          <div class="deck-preview-background deck-preview-scrub-background"></div>
+          <div class="deck-preview-scrubber"></div>
+        </div>
+        <div class="deck-preview-meta d-flex px-3 justify-content-between">
+          <div class="py-3 pr-1">
+            <img class="avatar avatar-sm" src="Chatbot%20Development%20-%20Using%20DialogFlow%20-%20Speaker%20Deck_files/1741a7877b6ff93bf29af4d11c2c895e_003.jpg" alt="1741a7877b6ff93bf29af4d11c2c895e?s=48"> Mar  7, 2019
+          </div>
+            <div class="py-3">
+              <svg class="icon icon-star "><use xlink:href="/icons/icons.svg#icon-star"></use></svg> 0
+            </div>
+            <div class="py-3">
+              <span title="35 views"><svg class="icon icon-eye "><use xlink:href="/icons/icons.svg#icon-eye"></use></svg> 35</span>
+            </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+    <a href="https://speakerdeck.com/danielanewman/im-feeling-lucky-building-great-search-experiences-for-todays-users-number-iac19" title="&quot;I'm Feeling Lucky&quot; -  Building Great Search Experiences for Today's Users (#IAC19)">
+      <div class="card deck-preview" data-id="00c9c29da5524d70ac35e498e05ba9f9" data-slide-count="98" data-cover-image="https://speakerd.s3.amazonaws.com/presentations/00c9c29da5524d70ac35e498e05ba9f9/preview_slide_0.jpg?504519">
+        <div class="deck-preview-image">
+          <div class="content"></div>
+          <div class="deck-preview-slide" style="background-image: url('https://speakerd.s3.amazonaws.com/presentations/00c9c29da5524d70ac35e498e05ba9f9/preview_slide_0.jpg?504519');"></div>
+          <div class="deck-preview-background" style="background-image: url('https://speakerd.s3.amazonaws.com/presentations/00c9c29da5524d70ac35e498e05ba9f9/preview_slide_0.jpg?504519');"></div>
+          <div class="deck-preview-slide deck-preview-scrub-slide"></div>
+          <div class="deck-preview-background deck-preview-scrub-background"></div>
+          <div class="deck-preview-scrubber"></div>
+        </div>
+        <div class="deck-preview-meta d-flex px-3 justify-content-between">
+          <div class="py-3 pr-1">
+            <img class="avatar avatar-sm" src="Chatbot%20Development%20-%20Using%20DialogFlow%20-%20Speaker%20Deck_files/3d4519fd34b76fb265fc0237f3792bd4.jpg" alt="3d4519fd34b76fb265fc0237f3792bd4?s=48"> Mar 17, 2019
+          </div>
+            <div class="py-3">
+              <svg class="icon icon-star "><use xlink:href="/icons/icons.svg#icon-star"></use></svg> 38
+            </div>
+            <div class="py-3">
+              <span title="5,081 views"><svg class="icon icon-eye "><use xlink:href="/icons/icons.svg#icon-eye"></use></svg> 5.1k</span>
+            </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+    <a href="https://speakerdeck.com/afnizarnur/easily-structure-and-communicate-ideas-using-wireframe" title="Easily Structure &amp; Communicate Ideas using Wireframe ">
+      <div class="card deck-preview" data-id="b54a0d1746ae428fa734ab129df6ed6c" data-slide-count="62" data-cover-image="https://speakerd.s3.amazonaws.com/presentations/b54a0d1746ae428fa734ab129df6ed6c/preview_slide_0.jpg?492987">
+        <div class="deck-preview-image">
+          <div class="content"></div>
+          <div class="deck-preview-slide" style="background-image: url('https://speakerd.s3.amazonaws.com/presentations/b54a0d1746ae428fa734ab129df6ed6c/preview_slide_0.jpg?492987');"></div>
+          <div class="deck-preview-background" style="background-image: url('https://speakerd.s3.amazonaws.com/presentations/b54a0d1746ae428fa734ab129df6ed6c/preview_slide_0.jpg?492987');"></div>
+          <div class="deck-preview-slide deck-preview-scrub-slide"></div>
+          <div class="deck-preview-background deck-preview-scrub-background"></div>
+          <div class="deck-preview-scrubber"></div>
+        </div>
+        <div class="deck-preview-meta d-flex px-3 justify-content-between">
+          <div class="py-3 pr-1">
+            <img class="avatar avatar-sm" src="Chatbot%20Development%20-%20Using%20DialogFlow%20-%20Speaker%20Deck_files/a9b18bbab50a3afb80222c0a85e710d0.png" alt="A9b18bbab50a3afb80222c0a85e710d0?s=48"> Feb 12, 2019
+          </div>
+            <div class="py-3">
+              <svg class="icon icon-star "><use xlink:href="/icons/icons.svg#icon-star"></use></svg> 55
+            </div>
+            <div class="py-3">
+              <span title="4,189 views"><svg class="icon icon-eye "><use xlink:href="/icons/icons.svg#icon-eye"></use></svg> 4.2k</span>
+            </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+    <a href="https://speakerdeck.com/jacobian/how-to-ace-a-technical-interview" title="How to Ace a Technical Interview">
+      <div class="card deck-preview" data-id="cf34b2337dbe42d29adeaec4b04f09e3" data-slide-count="51" data-cover-image="https://speakerd.s3.amazonaws.com/presentations/cf34b2337dbe42d29adeaec4b04f09e3/preview_slide_0.jpg?496748">
+        <div class="deck-preview-image">
+          <div class="content"></div>
+          <div class="deck-preview-slide" style="background-image: url('https://speakerd.s3.amazonaws.com/presentations/cf34b2337dbe42d29adeaec4b04f09e3/preview_slide_0.jpg?496748');"></div>
+          <div class="deck-preview-background" style="background-image: url('https://speakerd.s3.amazonaws.com/presentations/cf34b2337dbe42d29adeaec4b04f09e3/preview_slide_0.jpg?496748');"></div>
+          <div class="deck-preview-slide deck-preview-scrub-slide"></div>
+          <div class="deck-preview-background deck-preview-scrub-background"></div>
+          <div class="deck-preview-scrubber"></div>
+        </div>
+        <div class="deck-preview-meta d-flex px-3 justify-content-between">
+          <div class="py-3 pr-1">
+            <img class="avatar avatar-sm" src="Chatbot%20Development%20-%20Using%20DialogFlow%20-%20Speaker%20Deck_files/2f5463832ccb768ccb4a1ca3607c27ef.jpg" alt="2f5463832ccb768ccb4a1ca3607c27ef?s=48"> Feb 23, 2019
+          </div>
+            <div class="py-3">
+              <svg class="icon icon-star "><use xlink:href="/icons/icons.svg#icon-star"></use></svg> 77
+            </div>
+            <div class="py-3">
+              <span title="6,082 views"><svg class="icon icon-eye "><use xlink:href="/icons/icons.svg#icon-eye"></use></svg> 6.1k</span>
+            </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+    <a href="https://speakerdeck.com/lynnandtonic/art-the-web-and-tiny-ux" title="Art, The Web, and Tiny UX">
+      <div class="card deck-preview" data-id="a6f09ce505e740f98bc816afa763e872" data-slide-count="143" data-cover-image="https://speakerd.s3.amazonaws.com/presentations/a6f09ce505e740f98bc816afa763e872/preview_slide_0.jpg?477234">
+        <div class="deck-preview-image">
+          <div class="content"></div>
+          <div class="deck-preview-slide" style="background-image: url('https://speakerd.s3.amazonaws.com/presentations/a6f09ce505e740f98bc816afa763e872/preview_slide_0.jpg?477234');"></div>
+          <div class="deck-preview-background" style="background-image: url('https://speakerd.s3.amazonaws.com/presentations/a6f09ce505e740f98bc816afa763e872/preview_slide_0.jpg?477234');"></div>
+          <div class="deck-preview-slide deck-preview-scrub-slide"></div>
+          <div class="deck-preview-background deck-preview-scrub-background"></div>
+          <div class="deck-preview-scrubber"></div>
+        </div>
+        <div class="deck-preview-meta d-flex px-3 justify-content-between">
+          <div class="py-3 pr-1">
+            <img class="avatar avatar-sm" src="Chatbot%20Development%20-%20Using%20DialogFlow%20-%20Speaker%20Deck_files/d67fff74178013024d833b3eec6cf27f.png" alt="D67fff74178013024d833b3eec6cf27f?s=48"> Oct  7, 2018
+          </div>
+            <div class="py-3">
+              <svg class="icon icon-star "><use xlink:href="/icons/icons.svg#icon-star"></use></svg> 171
+            </div>
+            <div class="py-3">
+              <span title="9,186 views"><svg class="icon icon-eye "><use xlink:href="/icons/icons.svg#icon-eye"></use></svg> 9.2k</span>
+            </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+    <a href="https://speakerdeck.com/revolveconf/creatively-recalculating-your-daily-design-routine" title="Creatively Recalculating Your Daily Design Routine">
+      <div class="card deck-preview" data-id="53bccbecf4aa455a81b6fd3d6178d099" data-slide-count="89" data-cover-image="https://speakerd.s3.amazonaws.com/presentations/53bccbecf4aa455a81b6fd3d6178d099/preview_slide_0.jpg?477729">
+        <div class="deck-preview-image">
+          <div class="content"></div>
+          <div class="deck-preview-slide" style="background-image: url('https://speakerd.s3.amazonaws.com/presentations/53bccbecf4aa455a81b6fd3d6178d099/preview_slide_0.jpg?477729');"></div>
+          <div class="deck-preview-background" style="background-image: url('https://speakerd.s3.amazonaws.com/presentations/53bccbecf4aa455a81b6fd3d6178d099/preview_slide_0.jpg?477729');"></div>
+          <div class="deck-preview-slide deck-preview-scrub-slide"></div>
+          <div class="deck-preview-background deck-preview-scrub-background"></div>
+          <div class="deck-preview-scrubber"></div>
+        </div>
+        <div class="deck-preview-meta d-flex px-3 justify-content-between">
+          <div class="py-3 pr-1">
+            <img class="avatar avatar-sm" src="Chatbot%20Development%20-%20Using%20DialogFlow%20-%20Speaker%20Deck_files/48c098b6579220a67a6ba949be6e4b5a.jpg" alt="48c098b6579220a67a6ba949be6e4b5a?s=48"> Nov 13, 2018
+          </div>
+            <div class="py-3">
+              <svg class="icon icon-star "><use xlink:href="/icons/icons.svg#icon-star"></use></svg> 128
+            </div>
+            <div class="py-3">
+              <span title="5,152 views"><svg class="icon icon-eye "><use xlink:href="/icons/icons.svg#icon-eye"></use></svg> 5.2k</span>
+            </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+    <a href="https://speakerdeck.com/maltzj/code-reviewing-like-a-champion" title="Code Reviewing Like a Champion">
+      <div class="card deck-preview" data-id="3c09f9c42e12490d87f92f7c6ad8aa25" data-slide-count="48" data-cover-image="https://speakerd.s3.amazonaws.com/presentations/3c09f9c42e12490d87f92f7c6ad8aa25/preview_slide_0.jpg?455068">
+        <div class="deck-preview-image">
+          <div class="content"></div>
+          <div class="deck-preview-slide" style="background-image: url('https://speakerd.s3.amazonaws.com/presentations/3c09f9c42e12490d87f92f7c6ad8aa25/preview_slide_0.jpg?455068');"></div>
+          <div class="deck-preview-background" style="background-image: url('https://speakerd.s3.amazonaws.com/presentations/3c09f9c42e12490d87f92f7c6ad8aa25/preview_slide_0.jpg?455068');"></div>
+          <div class="deck-preview-slide deck-preview-scrub-slide"></div>
+          <div class="deck-preview-background deck-preview-scrub-background"></div>
+          <div class="deck-preview-scrubber"></div>
+        </div>
+        <div class="deck-preview-meta d-flex px-3 justify-content-between">
+          <div class="py-3 pr-1">
+            <img class="avatar avatar-sm" src="Chatbot%20Development%20-%20Using%20DialogFlow%20-%20Speaker%20Deck_files/c7393b7ba7ec9c8890dd77d209fbb3c9.jpg" alt="C7393b7ba7ec9c8890dd77d209fbb3c9?s=48"> Jul 20, 2018
+          </div>
+            <div class="py-3">
+              <svg class="icon icon-star "><use xlink:href="/icons/icons.svg#icon-star"></use></svg> 401
+            </div>
+            <div class="py-3">
+              <span title="26,179 views"><svg class="icon icon-eye "><use xlink:href="/icons/icons.svg#icon-eye"></use></svg> 26k</span>
+            </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+    <a href="https://speakerdeck.com/scottboms/imperfection-machines-the-place-of-print-at-facebook" title="Imperfection Machines: The Place of Print at Facebook">
+      <div class="card deck-preview" data-id="b4e937028d5141ecb94f6c673997c8e1" data-slide-count="101" data-cover-image="https://speakerd.s3.amazonaws.com/presentations/b4e937028d5141ecb94f6c673997c8e1/preview_slide_0.jpg?453039">
+        <div class="deck-preview-image">
+          <div class="content"></div>
+          <div class="deck-preview-slide" style="background-image: url('https://speakerd.s3.amazonaws.com/presentations/b4e937028d5141ecb94f6c673997c8e1/preview_slide_0.jpg?453039');"></div>
+          <div class="deck-preview-background" style="background-image: url('https://speakerd.s3.amazonaws.com/presentations/b4e937028d5141ecb94f6c673997c8e1/preview_slide_0.jpg?453039');"></div>
+          <div class="deck-preview-slide deck-preview-scrub-slide"></div>
+          <div class="deck-preview-background deck-preview-scrub-background"></div>
+          <div class="deck-preview-scrubber"></div>
+        </div>
+        <div class="deck-preview-meta d-flex px-3 justify-content-between">
+          <div class="py-3 pr-1">
+            <img class="avatar avatar-sm" src="Chatbot%20Development%20-%20Using%20DialogFlow%20-%20Speaker%20Deck_files/7c8469ee8c9e594c65c59b919626c08d.png" alt="7c8469ee8c9e594c65c59b919626c08d?s=48"> Jun 14, 2018
+          </div>
+            <div class="py-3">
+              <svg class="icon icon-star "><use xlink:href="/icons/icons.svg#icon-star"></use></svg> 202
+            </div>
+            <div class="py-3">
+              <span title="8,292 views"><svg class="icon icon-eye "><use xlink:href="/icons/icons.svg#icon-eye"></use></svg> 8.3k</span>
+            </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+    <a href="https://speakerdeck.com/lauravandoore/building-a-scalable-design-system-with-sketch" title="Building a Scalable Design System with Sketch">
+      <div class="card deck-preview" data-id="f8937bc10245428ea8901efe6c18cb5d" data-slide-count="63" data-cover-image="https://speakerd.s3.amazonaws.com/presentations/f8937bc10245428ea8901efe6c18cb5d/preview_slide_0.jpg?450769">
+        <div class="deck-preview-image">
+          <div class="content"></div>
+          <div class="deck-preview-slide" style="background-image: url('https://speakerd.s3.amazonaws.com/presentations/f8937bc10245428ea8901efe6c18cb5d/preview_slide_0.jpg?450769');"></div>
+          <div class="deck-preview-background" style="background-image: url('https://speakerd.s3.amazonaws.com/presentations/f8937bc10245428ea8901efe6c18cb5d/preview_slide_0.jpg?450769');"></div>
+          <div class="deck-preview-slide deck-preview-scrub-slide"></div>
+          <div class="deck-preview-background deck-preview-scrub-background"></div>
+          <div class="deck-preview-scrubber"></div>
+        </div>
+        <div class="deck-preview-meta d-flex px-3 justify-content-between">
+          <div class="py-3 pr-1">
+            <img class="avatar avatar-sm" src="Chatbot%20Development%20-%20Using%20DialogFlow%20-%20Speaker%20Deck_files/1177e050db6bafe62885362edf6e3537.jpg" alt="1177e050db6bafe62885362edf6e3537?s=48"> Jun 19, 2018
+          </div>
+            <div class="py-3">
+              <svg class="icon icon-star "><use xlink:href="/icons/icons.svg#icon-star"></use></svg> 335
+            </div>
+            <div class="py-3">
+              <span title="19,423 views"><svg class="icon icon-eye "><use xlink:href="/icons/icons.svg#icon-eye"></use></svg> 19k</span>
+            </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+    <a href="https://speakerdeck.com/wjessup/building-better-people-how-to-give-real-time-feedback-that-sticks" title="Building Better People: How to give real-time feedback that sticks.">
+      <div class="card deck-preview" data-id="a17deadbf4b84544b4975ff2e4c66902" data-slide-count="29" data-cover-image="https://speakerd.s3.amazonaws.com/presentations/a17deadbf4b84544b4975ff2e4c66902/preview_slide_0.jpg?449488">
+        <div class="deck-preview-image">
+          <div class="content"></div>
+          <div class="deck-preview-slide" style="background-image: url('https://speakerd.s3.amazonaws.com/presentations/a17deadbf4b84544b4975ff2e4c66902/preview_slide_0.jpg?449488');"></div>
+          <div class="deck-preview-background" style="background-image: url('https://speakerd.s3.amazonaws.com/presentations/a17deadbf4b84544b4975ff2e4c66902/preview_slide_0.jpg?449488');"></div>
+          <div class="deck-preview-slide deck-preview-scrub-slide"></div>
+          <div class="deck-preview-background deck-preview-scrub-background"></div>
+          <div class="deck-preview-scrubber"></div>
+        </div>
+        <div class="deck-preview-meta d-flex px-3 justify-content-between">
+          <div class="py-3 pr-1">
+            <img class="avatar avatar-sm" src="Chatbot%20Development%20-%20Using%20DialogFlow%20-%20Speaker%20Deck_files/9952dfcd5d338f8a8e7175c8a8f65fb5.jpg" alt="9952dfcd5d338f8a8e7175c8a8f65fb5?s=48"> Jun 18, 2018
+          </div>
+            <div class="py-3">
+              <svg class="icon icon-star "><use xlink:href="/icons/icons.svg#icon-star"></use></svg> 258
+            </div>
+            <div class="py-3">
+              <span title="9,808 views"><svg class="icon icon-eye "><use xlink:href="/icons/icons.svg#icon-eye"></use></svg> 9.8k</span>
+            </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+    </div>
+
+    <footer class="d-block border-top">
+  <div class="container py-3 py-md-5 text-muted">
+    <div class="row text-center text-md-left">
+      <div class="col-12 col-md-auto mr-auto mb-3 mb-md-0">
+        <div class="copyright-text mb-3 mb-md-0">Copyright © 2019 <a href="https://fewerandfaster.com/">Fewer and Faster</a> LLC.</div>
+        <div>All slide content and descriptions are owned by their&nbsp;creators.</div>
+      </div>
+      <div class="col-12 col-md-auto">
+        <a href="https://speakerdeck.com/faq">F.A.Q.</a> &nbsp;
+        <a href="https://speakerdeck.com/tos">Terms</a> &nbsp;
+        <a href="https://speakerdeck.com/privacy">Privacy</a> &nbsp;
+        <a href="https://speakerdeck.com/dmca">DMCA</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="Chatbot%20Development%20-%20Using%20DialogFlow%20-%20Speaker%20Deck_files/stats-dd214f1dc3f3069dcb9a.js"></script>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-19290517-1']);
+    _gaq.push(['_setDomainName', '.speakerdeck.com']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+    <script type="text/javascript" src="Chatbot%20Development%20-%20Using%20DialogFlow%20-%20Speaker%20Deck_files/widgets.js"></script>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '491686710857561',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v2.12'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+  
+
+<iframe scrolling="no" allowtransparency="true" src="Chatbot%20Development%20-%20Using%20DialogFlow%20-%20Speaker%20Deck_files/widget_iframe.htm" title="Twitter settings iframe" style="display: none;" frameborder="0"></iframe><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div><iframe name="fb_xdm_frame_https" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" style="border: medium none;" src="Chatbot%20Development%20-%20Using%20DialogFlow%20-%20Speaker%20Deck_files/d_vbiawPdxB.htm" frameborder="0"></iframe></div><div></div></div></div></body></html>
